@@ -16,8 +16,9 @@
 <meta property="og:image" content="https://zicoolhan.github.io/Users/czh/Desktop/屏幕快照%202022-01-08%20下午2.04.39.png">
 <meta property="og:image" content="https://zicoolhan.github.io/Users/czh/Desktop/屏幕快照%202022-01-08%20下午2.13.02.png">
 <meta property="og:image" content="https://zicoolhan.github.io/Users/czh/Desktop/屏幕快照%202022-01-08%20下午2.24.54.png">
+<meta property="og:image" content="https://zicoolhan.github.io/Users/czh/Desktop/屏幕快照%202022-01-08%20下午2.45.52.png">
 <meta property="article:published_time" content="2022-01-08T06:27:06.000Z">
-<meta property="article:modified_time" content="2022-01-08T06:27:58.516Z">
+<meta property="article:modified_time" content="2022-01-08T06:55:08.021Z">
 <meta property="article:author" content="Zihan Chen">
 <meta property="article:tag" content="Javascript, CSS, HTML">
 <meta name="twitter:card" content="summary">
@@ -103,7 +104,7 @@
         <h2 id="序"><a href="#序" class="headerlink" title="序"></a>序</h2><p>迷迷糊糊的走过2021年来到了2022年，这是我上班后的第一个新年。回想一年来，我经历了刚进入工作时的懵懂与兴奋，初期完成任务后的满足及愉快，产生bug后的焦急和自责，中期熟悉工作内容后的懈怠和放松，到现在略感迷茫不知向何处发展这几个状态。遂决定在新年给自己一些日常工作后看得到的产出，总结平时的收获，沉淀自己的能力，即使现在很迷茫，但行动起来一定会比待在原地不动要强。于是有了这个博客的诞生。</p>
 <hr>
 <p>后续我希望可以长期维护此博客，成为我工作路上的一种成长记录以及一些生活的拾遗。</p>
-<h2 id="正题-博客搭建"><a href="#正题-博客搭建" class="headerlink" title="正题-博客搭建"></a>正题-博客搭建</h2><h3 id="技术选型"><a href="#技术选型" class="headerlink" title="技术选型"></a>技术选型</h3><p>技术博客嘛，主要是静态文件。曾经年少无知的我也尝试过从后台服务到前端页面以及服务器部署一条龙服务搭建自己的博客，在那个过程中确实让我收获良多。不过那繁琐的过程很可能让我无法专注于博客本身的内容输出，所以决定使用比较方便的快速搭建方式： hexo +github。</p>
+<h2 id="进入正题-博客搭建"><a href="#进入正题-博客搭建" class="headerlink" title="进入正题-博客搭建"></a>进入正题-博客搭建</h2><h3 id="技术选型"><a href="#技术选型" class="headerlink" title="技术选型"></a>技术选型</h3><p>技术博客嘛，主要是静态文件。曾经年少无知的我也尝试过从后台服务到前端页面以及服务器部署一条龙服务搭建自己的博客，在那个过程中确实让我收获良多。不过那繁琐的过程很可能让我无法专注于博客本身的内容输出，所以决定使用比较方便的快速搭建方式： hexo +github。</p>
 <h3 id="搭建过程"><a href="#搭建过程" class="headerlink" title="搭建过程"></a>搭建过程</h3><h4 id="1-配置环境"><a href="#1-配置环境" class="headerlink" title="1. 配置环境"></a>1. 配置环境</h4><ul>
 <li>node.js</li>
 <li>git</li>
@@ -124,11 +125,30 @@
 <p>刷新页面，新博客会出现在列表中</p>
 <img src="/Users/czh/Desktop/屏幕快照 2022-01-08 下午2.24.54.png" alt="屏幕快照 2022-01-08 下午2.24.54" style="zoom:50%;" />
 
-<h3 id="疑难问题"><a href="#疑难问题" class="headerlink" title="疑难问题"></a>疑难问题</h3><h4 id="1-配置url正确访问所有资源"><a href="#1-配置url正确访问所有资源" class="headerlink" title="1. 配置url正确访问所有资源"></a>1. 配置url正确访问所有资源</h4><h4 id="2-本地md文件的图片如何正确显示"><a href="#2-本地md文件的图片如何正确显示" class="headerlink" title="2. 本地md文件的图片如何正确显示"></a>2. 本地md文件的图片如何正确显示</h4><h4 id="3-主体选择及美化"><a href="#3-主体选择及美化" class="headerlink" title="3. 主体选择及美化"></a>3. 主体选择及美化</h4>
+<h4 id="4-部署"><a href="#4-部署" class="headerlink" title="4. 部署"></a>4. 部署</h4><p>博客搭建进行到现在这一步，本地跑的博客只能自己独享，是好是坏当然要分享出来咯。我使用的是比较全世界最大的同性交友平台github来部署我的博客。</p>
+<p>步骤很简单，第一步，创建一个repository</p>
+<img src="/Users/czh/Desktop/屏幕快照 2022-01-08 下午2.45.52.png" alt="屏幕快照 2022-01-08 下午2.45.52" style="zoom:50%;" />
+
+<p>第二步，将repository命名为github_name.github.io, 这样做的目的是为了后续可以直接使用hexo指令进行部署</p>
+<p>![屏幕快照 2022-01-08 下午2.46.16](/Users/czh/Desktop/屏幕快照 2022-01-08 下午2.46.16.png)</p>
+<p>第三步，将创建好的repository的https 地址复制</p>
+<p>![屏幕快照 2022-01-08 下午2.46.44](/Users/czh/Desktop/屏幕快照 2022-01-08 下午2.46.44.png)</p>
+<p>第四步，安装hexo-deployer-git 并在config.yml中配置URL及 Deploy选项</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p>_config.yml文件配置如下</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="comment">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">https://zicoolhan.github.io</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">:year/:month/:day/:title/</span></span><br><span class="line"><span class="attr">permalink_defaults:</span></span><br><span class="line"><span class="attr">pretty_urls:</span></span><br><span class="line">  <span class="attr">trailing_index:</span> <span class="literal">true</span> <span class="comment"># Set to false to remove trailing &#x27;index.html&#x27; from permalinks</span></span><br><span class="line">  <span class="attr">trailing_html:</span> <span class="literal">true</span> <span class="comment"># Set to false to remove trailing &#x27;.html&#x27; from permalinks</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/zicoolhan/zicoolhan.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p>第五步，运行命令部署</p>
+<p><code>hexo d</code> or <code>hexo deploy</code></p>
+<p>hexo会自动打包public文件并将其上传至远程git仓库，此时可以通过改远程仓库的page地址访问 入： <a href="https://zicoolhan.github.io/">zicoolhan.github.io</a></p>
+<h3 id="踩坑总结"><a href="#踩坑总结" class="headerlink" title="踩坑总结"></a>踩坑总结</h3><h4 id="1-配置url正确访问所有资源"><a href="#1-配置url正确访问所有资源" class="headerlink" title="1. 配置url正确访问所有资源"></a>1. 配置url正确访问所有资源</h4><h4 id="2-本地md文件的图片如何正确显示"><a href="#2-本地md文件的图片如何正确显示" class="headerlink" title="2. 本地md文件的图片如何正确显示"></a>2. 本地md文件的图片如何正确显示</h4><h4 id="3-主体选择及美化"><a href="#3-主体选择及美化" class="headerlink" title="3. 主体选择及美化"></a>3. 主体选择及美化</h4>
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zicoolhan.github.io/2022/01/08/%E6%96%B0%E5%B9%B4%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8F%8A%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" data-id="cky5gzmyz0001imo56tn76qnr" data-title="新年第一篇及博客搭建" class="article-share-link">分享</a>
+      <a data-url="https://zicoolhan.github.io/2022/01/08/%E6%96%B0%E5%B9%B4%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8F%8A%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" data-id="cky5h39sc0001l4o525gmg2bs" data-title="新年第一篇及博客搭建" class="article-share-link">分享</a>
       
       
       
