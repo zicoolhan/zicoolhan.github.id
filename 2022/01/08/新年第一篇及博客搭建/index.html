@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <meta charset="utf-8">
+
+    
+
+    <!-- 渲染优化 -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--icon-->
+
+    
+    
+    
+    
+    
+
+
+    <!-- meta -->
+
+
+<title>新年第一篇及博客搭建 | Zihan Blog</title>
+
+
+    <meta name="keywords" content="Javascript, CSS, HTML">
+
+
+
+
+    <!-- OpenGraph -->
+ 
+    <meta name="description" content="序迷迷糊糊的走过2021年来到了2022年，这是我上班后的第一个新年。回想一年来，我经历了刚进入工作时的懵懂与兴奋，初期完成任务后的满足及愉快，产生bug后的焦急和自责，中期熟悉工作内容后的懈怠和放松，到现在略感迷茫不知向何处发展这几个状态。遂决定在新年给自己一些日常工作后看得到的产出，总结平时的收获，沉淀自己的能力，即使现在很迷茫，但行动起来一定会比待在原地不动要强。于是有了这个博客的诞生。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="新年第一篇及博客搭建">
+<meta property="og:url" content="https://zicoolhan.github.io/2022/01/08/%E6%96%B0%E5%B9%B4%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8F%8A%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/index.html">
+<meta property="og:site_name" content="Zihan Blog">
+<meta property="og:description" content="序迷迷糊糊的走过2021年来到了2022年，这是我上班后的第一个新年。回想一年来，我经历了刚进入工作时的懵懂与兴奋，初期完成任务后的满足及愉快，产生bug后的焦急和自责，中期熟悉工作内容后的懈怠和放松，到现在略感迷茫不知向何处发展这几个状态。遂决定在新年给自己一些日常工作后看得到的产出，总结平时的收获，沉淀自己的能力，即使现在很迷茫，但行动起来一定会比待在原地不动要强。于是有了这个博客的诞生。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://zicoolhan.github.io/2022/01/08/%E6%96%B0%E5%B9%B4%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8F%8A%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/01.png">
+<meta property="og:image" content="https://zicoolhan.github.io/2022/01/08/%E6%96%B0%E5%B9%B4%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8F%8A%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/02.png">
+<meta property="og:image" content="https://zicoolhan.github.io/2022/01/08/%E6%96%B0%E5%B9%B4%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8F%8A%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/03.png">
+<meta property="og:image" content="https://zicoolhan.github.io/2022/01/08/%E6%96%B0%E5%B9%B4%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8F%8A%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/04.png">
+<meta property="og:image" content="https://zicoolhan.github.io/2022/01/08/%E6%96%B0%E5%B9%B4%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8F%8A%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/05.png">
+<meta property="og:image" content="https://zicoolhan.github.io/2022/01/08/%E6%96%B0%E5%B9%B4%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8F%8A%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/06.png">
+<meta property="article:published_time" content="2022-01-08T06:27:06.000Z">
+<meta property="article:modified_time" content="2022-01-08T11:33:09.631Z">
+<meta property="article:author" content="Zihan Chen">
+<meta property="article:tag" content="Javascript, CSS, HTML">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://zicoolhan.github.io/2022/01/08/%E6%96%B0%E5%B9%B4%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8F%8A%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/01.png">
+
+
+    
+<link rel="stylesheet" href="/css/style/main.css">
+ 
+
+    
+    
+        <link rel="stylesheet" id="hl-default-theme" href="/css/highlight/default.css" media="none" onload="this.media='all'">
+        
+    
+
+    
+    
+
+    
+
+     
+
+    <!-- custom head -->
+
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+    <body>
+        <div id="app">
+            <header class="header">
+    <div class="header__left">
+        <a href="/" class="button">
+            <span class="logo__text">Zihan</span>
+        </a>
+    </div>
+    <div class="header__right">
+        
+            <div class="navbar__menus">
+                
+                    <a href="/" class="navbar-menu button">首页</a>
+                
+                    <a href="/tags/" class="navbar-menu button">标签</a>
+                
+                    <a href="/archives/" class="navbar-menu button">归档</a>
+                
+                    <a href="/friends/" class="navbar-menu button">友链</a>
+                
+                    <a href="/page/" class="navbar-menu button">Page</a>
+                
+            </div>
+        
+        
+        
+
+        
+        
+
+        
+            <a class="dropdown-icon button" id="btn-dropdown" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path></svg></a>
+            <div class="dropdown-menus" id="dropdown-menus">
+                
+                    <a href="/" class="dropdown-menu button">首页</a>
+                
+                    <a href="/tags/" class="dropdown-menu button">标签</a>
+                
+                    <a href="/archives/" class="dropdown-menu button">归档</a>
+                
+                    <a href="/friends/" class="dropdown-menu button">友链</a>
+                
+                    <a href="/page/" class="dropdown-menu button">Page</a>
+                
+            </div>
+        
+    </div>
+</header>
+
+
+            <main class="main">
+    
+
+<div class="post-title">
+    <h1 class="post-title__text">
+        新年第一篇及博客搭建
+    </h1>
+    <div class="post-title__meta">
+        <a href="/archives/2022/01/" class="post-meta__date button">2022-01-08</a>
+        
+ 
+        
+    
+    
+
+
+ 
+
+ 
+    </div>
+</div>
+
+
+
+<article class="post content-card">
+    <div class="post__header"></div>
+    <div class="post__content">
+        <h2 id="序"><a href="#序" class="headerlink" title="序"></a>序</h2><p>迷迷糊糊的走过2021年来到了2022年，这是我上班后的第一个新年。回想一年来，我经历了刚进入工作时的懵懂与兴奋，初期完成任务后的满足及愉快，产生bug后的焦急和自责，中期熟悉工作内容后的懈怠和放松，到现在略感迷茫不知向何处发展这几个状态。遂决定在新年给自己一些日常工作后看得到的产出，总结平时的收获，沉淀自己的能力，即使现在很迷茫，但行动起来一定会比待在原地不动要强。于是有了这个博客的诞生。</p>
+<hr>
+<p>后续我希望可以长期维护此博客，成为我工作路上的一种成长记录以及一些生活的拾遗。</p>
+<h2 id="进入正题-博客搭建"><a href="#进入正题-博客搭建" class="headerlink" title="进入正题-博客搭建"></a>进入正题-博客搭建</h2><h3 id="技术选型"><a href="#技术选型" class="headerlink" title="技术选型"></a>技术选型</h3><p>技术博客嘛，主要是静态文件。曾经年少无知的我也尝试过从后台服务到前端页面以及服务器部署一条龙服务搭建自己的博客，在那个过程中确实让我收获良多。不过那繁琐的过程很可能让我无法专注于博客本身的内容输出，所以决定使用比较方便的快速搭建方式： hexo +github。</p>
+<h3 id="搭建过程"><a href="#搭建过程" class="headerlink" title="搭建过程"></a>搭建过程</h3><h4 id="1-配置环境"><a href="#1-配置环境" class="headerlink" title="1. 配置环境"></a>1. 配置环境</h4><ul>
+<li>node.js</li>
+<li>git</li>
+<li>hexo-cli</li>
+</ul>
+<h4 id="2-初始化hexo"><a href="#2-初始化hexo" class="headerlink" title="2. 初始化hexo"></a>2. 初始化hexo</h4><p>有了hexo-cli, 初始化项目非常简单，成功初始化后即可开起本地服务浏览博客页面</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// 初始化项目</span><br><span class="line">$ hexo init blog</span><br><span class="line">// 进入项目文件目录</span><br><span class="line">$ cd blog</span><br><span class="line">// 启动本地服务器</span><br><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>完成以上命令后点击 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> 就可以看到这个丑丑的界面了</p>
+<p><img src="/2022/01/08/%E6%96%B0%E5%B9%B4%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8F%8A%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/01.png" alt="01"></p>
+<h4 id="3-添加博客"><a href="#3-添加博客" class="headerlink" title="3. 添加博客"></a>3. 添加博客</h4><p>博客项目初始化后，第一步试试手写一篇。命令也很简单</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new &quot;新年第一篇及博客搭建&quot;</span><br></pre></td></tr></table></figure>
+
+<p>创建成功后，md文件会出现在<code>./source/_posts/新年第一篇及博客搭建.md</code>中</p>
+<p><img src="/2022/01/08/%E6%96%B0%E5%B9%B4%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8F%8A%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/02.png" alt="02"></p>
+<p>刷新页面，新博客会出现在列表中</p>
+<p><img src="/2022/01/08/%E6%96%B0%E5%B9%B4%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8F%8A%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/03.png" alt="03"></p>
+<h4 id="4-部署"><a href="#4-部署" class="headerlink" title="4. 部署"></a>4. 部署</h4><p>博客搭建进行到现在这一步，本地跑的博客只能自己独享，是好是坏当然要分享出来咯。我使用的是比较全世界最大的同性交友平台github来部署我的博客。</p>
+<p>步骤很简单，第一步，创建一个repository</p>
+<p><img src="/2022/01/08/%E6%96%B0%E5%B9%B4%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8F%8A%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/04.png" alt="04"></p>
+<p>第二步，将repository命名为github_name.github.io, 这样做的目的是为了后续可以直接使用hexo指令进行部署</p>
+<p><img src="/2022/01/08/%E6%96%B0%E5%B9%B4%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8F%8A%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/05.png" alt="05"></p>
+<p>第三步，将创建好的repository的https 地址复制</p>
+<p><img src="/2022/01/08/%E6%96%B0%E5%B9%B4%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8F%8A%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/06.png" alt="06"></p>
+<p>第四步，安装hexo-deployer-git 并在config.yml中配置URL及 Deploy选项</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p>_config.yml文件配置如下</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="comment">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">https://zicoolhan.github.io</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">:year/:month/:day/:title/</span></span><br><span class="line"><span class="attr">permalink_defaults:</span></span><br><span class="line"><span class="attr">pretty_urls:</span></span><br><span class="line">  <span class="attr">trailing_index:</span> <span class="literal">true</span> <span class="comment"># Set to false to remove trailing &#x27;index.html&#x27; from permalinks</span></span><br><span class="line">  <span class="attr">trailing_html:</span> <span class="literal">true</span> <span class="comment"># Set to false to remove trailing &#x27;.html&#x27; from permalinks</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/zicoolhan/zicoolhan.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p>第五步，运行命令部署</p>
+<p><code>hexo d</code> or <code>hexo deploy</code></p>
+<p>hexo会自动打包public文件并将其上传至远程git仓库，此时可以通过改远程仓库的page地址访问 入： <a href="https://zicoolhan.github.io/">zicoolhan.github.io</a></p>
+<h3 id="踩坑总结"><a href="#踩坑总结" class="headerlink" title="踩坑总结"></a>踩坑总结</h3><h4 id="1-配置url正确访问所有资源"><a href="#1-配置url正确访问所有资源" class="headerlink" title="1. 配置url正确访问所有资源"></a>1. 配置url正确访问所有资源</h4><h4 id="2-本地md文件的图片如何正确显示"><a href="#2-本地md文件的图片如何正确显示" class="headerlink" title="2. 本地md文件的图片如何正确显示"></a>2. 本地md文件的图片如何正确显示</h4><h4 id="3-主体选择及美化"><a href="#3-主体选择及美化" class="headerlink" title="3. 主体选择及美化"></a>3. 主体选择及美化</h4>
+    </div>
+     
+    <div class="post-footer__meta"><p>更新于 2022-01-08</p></div> 
+    <div class="post-entry__tags"></div> 
+</article>
+
+
+
+
+
+
+</main>
+
+            <footer class="footer">
+    
+    
+
+
+    
+     
+ 
+
+ 
+    
+        
+        <p class="footer-copyright">
+            Copyright © 2022 <a href="/">Zihan Blog</a>
+        </p>
+    
+    
+    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
+</footer>
+
+        </div>
+         
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+    
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+    </body>
+</html>
